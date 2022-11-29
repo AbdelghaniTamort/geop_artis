@@ -22,7 +22,7 @@ map.addControl(new mapboxgl.FullscreenControl());
 map.on('load', () => {
   map.addSource('stands', {
     'type': 'geojson',
-    'data': "poly.geojson" ,
+    'data': "assets/geojson/poly.geojson" ,
   })
 
 
@@ -85,7 +85,7 @@ map.on('load', () => {
       
   map.addSource('entree', {
     'type': 'geojson',
-    'data': "entree.geojson" ,
+    'data': "assets/geojson/entree.geojson" ,
   })
 
 
@@ -107,7 +107,7 @@ map.on('load', () => {
 map.on('load', () => {
   map.addSource('limite', {
     'type': 'geojson',
-    'data': "limite.geojson" ,
+    'data': "assets/geojson/limite.geojson" ,
   })
 
   map.addLayer({
@@ -128,7 +128,7 @@ map.on('load', () => {
   map.on('load', () => {
     map.addSource('limite_hall', {
       'type': 'geojson',
-      'data': "limite_hall.geojson" ,
+      'data': "assets/geojson/limite_hall.geojson" ,
     })
   
     map.addLayer({

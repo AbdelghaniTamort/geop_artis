@@ -1,0 +1,12 @@
+var cinemas ={
+"type": "FeatureCollection",
+"name": "cinemas",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "Cinema": "Renaissance", "phi": 34.02014787, "lambda": -6.837185815, "reviews": "https://www.tripadvisor.com/Restaurant_Review-g293736-d14179200-Reviews-Cafe_Cinema_Renaissance-Rabat_Rabat_Sale_Kenitra.html", "images": "renaissance.jpg", "tarif": "39 MAD", "Nb_ecrans": 1 }, "geometry": { "type": "Point", "coordinates": [ -6.837185815, 34.02014787 ] } },
+{ "type": "Feature", "properties": { "Cinema": "Cinéatlas ", "phi": 34.01867795, "lambda": -6.836003515, "reviews": "https://ma.arabplaces.com/rabat-sale-kenitra/cineatlas-349705", "images": "cineatlas.jpg", "tarif": "53 MAD", "Nb_ecrans": 4 }, "geometry": { "type": "Point", "coordinates": [ -6.836003515, 34.01867795 ] } },
+{ "type": "Feature", "properties": { "Cinema": "Royal", "phi": 34.02120433, "lambda": -6.835418204, "reviews": "https://ma.arabplaces.com/rabat-sale-kenitra/cinema-royal-381260", "images": "royal.jpg", "tarif": "30 MAD", "Nb_ecrans": 1 }, "geometry": { "type": "Point", "coordinates": [ -6.835418204, 34.02120433 ] } },
+{ "type": "Feature", "properties": { "Cinema": "Megarama", "phi": 34.00385774, "lambda": -6.845445703, "reviews": "https://ma.arabplaces.com/rabat-sale-kenitra/megarama-558096", "images": "megarama.jpg", "tarif": "55 MAD", "Nb_ecrans": 11 }, "geometry": { "type": "Point", "coordinates": [ -6.845445703, 34.00385774 ] } },
+{ "type": "Feature", "properties": { "Cinema": "Paradise", "phi": 34.01474428, "lambda": -6.846932436, "reviews": "https://www.cybo.com/MA-biz/cinema-paradise", "images": "paradise.jpg", "tarif": "28 MAD", "Nb_ecrans": 1 }, "geometry": { "type": "Point", "coordinates": [ -6.846932436, 34.01474428 ] } }
+]
+}

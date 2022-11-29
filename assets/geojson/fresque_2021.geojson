@@ -1,0 +1,15 @@
+var fresque_2021 = {
+"type": "FeatureCollection",
+"name": "fresque_2021",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "Artiste": "Lhamzi", "phi": 33.99339621, "lambda": -6.877576881, "Nationalité": "Maroc", "Date_de_réalisation": "23/10/2021", "Image": "lhamzi.jpg" }, "geometry": { "type": "Point", "coordinates": [ -6.877576881, 33.99339621 ] } },
+{ "type": "Feature", "properties": { "Artiste": "Bakr", "phi": 34.01287505, "lambda": -6.855013397, "Nationalité": "Maroc", "Date_de_réalisation": "24/10/2021", "Image": "bakr.jpg" }, "geometry": { "type": "Point", "coordinates": [ -6.855013397, 34.01287505 ] } },
+{ "type": "Feature", "properties": { "Artiste": "Elian Chali", "phi": 34.00405558, "lambda": -6.871067548, "Nationalité": "Argrentine", "Date_de_réalisation": "25/10/2021", "Image": "elian.jpg" }, "geometry": { "type": "Point", "coordinates": [ -6.871067548, 34.00405558 ] } },
+{ "type": "Feature", "properties": { "Artiste": "Matth Velvet", "phi": 34.01660463, "lambda": -6.845405212, "Nationalité": "France", "Date_de_réalisation": "1/11/2021", "Image": "matth.jpg" }, "geometry": { "type": "Point", "coordinates": [ -6.845405212, 34.01660463 ] } },
+{ "type": "Feature", "properties": { "Artiste": "Imane Droby", "phi": 33.97847361, "lambda": -6.890367791, "Nationalité": "Maroc", "Date_de_réalisation": "22/10/2021", "Image": "droby.jpg" }, "geometry": { "type": "Point", "coordinates": [ -6.890367791, 33.97847361 ] } },
+{ "type": "Feature", "properties": { "Artiste": "Paola Delfin", "phi": 34.02228178, "lambda": -6.82863469, "Nationalité": "Mexique", "Date_de_réalisation": "31/10/2021", "Image": "delfin.jpg" }, "geometry": { "type": "Point", "coordinates": [ -6.82863469, 34.02228178 ] } },
+{ "type": "Feature", "properties": { "Artiste": "Eru & Emu Hamadaraka", "phi": 33.97145374, "lambda": -6.885330128, "Nationalité": "Japon", "Date_de_réalisation": "21/10/2021", "Image": "hamadaraka.jpg" }, "geometry": { "type": "Point", "coordinates": [ -6.885330128, 33.97145374 ] } },
+{ "type": "Feature", "properties": { "Artiste": "Udatxo", "phi": 33.99753677, "lambda": -6.816787857, "Nationalité": "Espagne", "Date_de_réalisation": "30/10/2021", "Image": "udatxo.jpg" }, "geometry": { "type": "Point", "coordinates": [ -6.816787857, 33.99753677 ] } }
+]
+}

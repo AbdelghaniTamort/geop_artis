@@ -1,0 +1,16 @@
+var fresque_2022 = {
+"type": "FeatureCollection",
+"name": "fresque_2022",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "Artiste": "Reda Boudima", "phi": 34.0207898, "lambda": -6.847685879, "Nationalité": "Maroc", "Date_de_réalisation": "25/08/2022", "Image": "reda.jpg" }, "geometry": { "type": "Point", "coordinates": [ -6.847685879, 34.0207898 ] } },
+{ "type": "Feature", "properties": { "Artiste": "Ed Oner", "phi": 34.0164405, "lambda": -6.850584384, "Nationalité": "Maroc", "Date_de_réalisation": "30/08/2022", "Image": "ed.jpg" }, "geometry": { "type": "Point", "coordinates": [ -6.850584384, 34.0164405 ] } },
+{ "type": "Feature", "properties": { "Artiste": "Beaugraff", "phi": 33.99741721, "lambda": -6.815994295, "Nationalité": "Sénégal", "Date_de_réalisation": "23/08/2022", "Image": "beau.jpg" }, "geometry": { "type": "Point", "coordinates": [ -6.815994295, 33.99741721 ] } },
+{ "type": "Feature", "properties": { "Artiste": "Manolo Messa", "phi": 33.99545171, "lambda": -6.817626256, "Nationalité": "Espagne", "Date_de_réalisation": "29/08/2022", "Image": "manolo.jpg" }, "geometry": { "type": "Point", "coordinates": [ -6.817626256, 33.99545171 ] } },
+{ "type": "Feature", "properties": { "Artiste": "Juraj Duris", "phi": 34.00076104, "lambda": -6.859637707, "Nationalité": "Slovaquie", "Date_de_réalisation": "27/08/2022", "Image": "duris.jpg" }, "geometry": { "type": "Point", "coordinates": [ -6.859637707, 34.00076104 ] } },
+{ "type": "Feature", "properties": { "Artiste": "Twoone", "phi": 33.99406878, "lambda": -6.872086343, "Nationalité": "Japon", "Date_de_réalisation": "28/08/2022", "Image": "twoone.jpg" }, "geometry": { "type": "Point", "coordinates": [ -6.872086343, 33.99406878 ] } },
+{ "type": "Feature", "properties": { "Artiste": "Pantonio", "phi": 33.99063678, "lambda": -6.873830986, "Nationalité": "Portugal", "Date_de_réalisation": "24/08/2022", "Image": "pantonio.jpg" }, "geometry": { "type": "Point", "coordinates": [ -6.873830986, 33.99063678 ] } },
+{ "type": "Feature", "properties": { "Artiste": "Tima", "phi": 33.96745324, "lambda": -6.903194892, "Nationalité": "Maroc", "Date_de_réalisation": "23/08/2022", "Image": "tima.jpg" }, "geometry": { "type": "Point", "coordinates": [ -6.903194892, 33.96745324 ] } },
+{ "type": "Feature", "properties": { "Artiste": "Bryan Beyung", "phi": 33.96499463, "lambda": -6.903575912, "Nationalité": "Canada", "Date_de_réalisation": "26/08/2022", "Image": "beyung.jpg" }, "geometry": { "type": "Point", "coordinates": [ -6.903575912, 33.96499463 ] } }
+]
+}

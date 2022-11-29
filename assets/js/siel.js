@@ -145,4 +145,9 @@ map.on('load', () => {
     });
   })
 
+// your code that shows the map div
+$('#map-div').show();
+
+// detect the map's new width and height and resize it
+map.resize();
 

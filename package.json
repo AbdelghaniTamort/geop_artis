@@ -1,0 +1,16 @@
+{
+  "name": "geoportail_artistique",
+  "version": "1.0.0",
+  "description": "Géoportail artistique de Rabat",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "Abdelghani Tamort",
+  "license": "ISC",
+  "dependencies": {
+    "pg": "^8.8.0"
+  }
+}

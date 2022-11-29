@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
+    />
+    <title>Fresques murales du festival JIDAR</title>
+
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="docs/images/favicon.ico"
+    />
+    <link rel="stylesheet" href="assets/css/leaflet.css" />
+    <script src="assets/js/leaflet.js"></script>
+    <script defer src="assets/js/script.js"></script>
+    <script
+      src="assets/geojson/fresque_2022.geojson"
+      type="text/javascript"
+    ></script>
+    <script
+      src="assets/geojson/fresque_2021.geojson"
+      type="text/javascript"
+    ></script>
+    <link rel="stylesheet" href="assets/css/Control.FullScreen.css" />
+    <script src="assets/js/Control.FullScreen.js"></script>
+    <!-- routing plugin -->
+    <script src="leaflet_routing/dist/leaflet-routing-machine.js"></script>
+    <link
+      rel="stylesheet"
+      href="leaflet_routing\dist\leaflet-routing-machine.css"
+    />
+    <link />
+
+    <style>
+      html,
+      body {
+        height: 100%;
+        margin: 0;
+      }
+      .leaflet-container {
+        height: 400px;
+        width: 600px;
+        max-width: 100%;
+        max-height: 100%;
+      }
+    </style>
+
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Inter:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&amp;display=swap"
+    />
+  </head>
+
+  <body>
+    <nav
+      class="navbar navbar-dark navbar-expand-md sticky-top py-3"
+      id="mainNav"
+    >
+      <div class="container">
+        <a
+          class="navbar-brand d-flex align-items-center"
+          href="/"
+          style="margin-right: 72px; padding-top: 0px; padding-right: 53px"
+          ><span
+            class="bs-icon-sm bs-icon-circle bs-icon-primary shadow d-flex justify-content-center align-items-center me-2 bs-icon"
+            ><img
+              src="assets/img/palette-de-couleurs.png"
+              width="36"
+              height="36" /></span
+          ><span style="margin-left: 10px"
+            >Géoportail Artistique et Culturel de Rabat</span
+          ></a
+        ><button
+          data-bs-toggle="collapse"
+          class="navbar-toggler"
+          data-bs-target="#navcol-1"
+        >
+          <span class="visually-hidden">Toggle navigation</span
+          ><span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navcol-1">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Accueil</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="projects.html">Cartes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Siel.html">Plan interactif</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="team.html">Auteurs</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contacts.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <section class="py-5">
+      <div class="container py-5">
+        <div id="map" style="width: 1200px; height: 800px"></div>
+      </div>
+    </section>
+    <footer class="bg-dark">
+      <div class="container py-4 py-lg-5">
+        <div class="row justify-content-center">
+          <div
+            class="col-sm-4 col-md-3 text-center text-lg-start d-flex flex-column"
+          >
+            <h3 class="fs-6 fw-bold">Cartes</h3>
+            <ul class="list-unstyled">
+              <li><a href="jidar.html">JIDAR Street Art</a></li>
+              <li><a href="cinemas.html">Cinémas</a></li>
+              <li><a href="entrees.html">Nombre d'entrées</a></li>
+              <li><a href="espaces.html">Espaces créatifs</a></li>
+            </ul>
+          </div>
+          <div
+            class="col-sm-4 col-md-3 text-center text-lg-start d-flex flex-column"
+          >
+            <h3 class="fs-6 fw-bold">Autres</h3>
+            <ul class="list-unstyled">
+              <li><a href="Siel.html">Plan interactif du SIEL</a></li>
+            </ul>
+          </div>
+          <div
+            class="col-sm-4 col-md-3 text-center text-lg-start d-flex flex-column"
+          >
+            <h3 class="fs-6 fw-bold">A propos</h3>
+            <ul class="list-unstyled">
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+            <p style="margin-top: -15px">
+              Ce géoportail tente de faire décourvir le côté artistique et
+              culturel de la ville de rabat à travers des cartes interactives.
+            </p>
+          </div>
+          <div
+            class="col-lg-3 text-center text-lg-start d-flex flex-column align-items-center order-first align-items-lg-start order-lg-last"
+          >
+            <div class="fw-bold d-flex align-items-center mb-2">
+              <span
+                class="bs-icon-sm bs-icon-circle bs-icon-primary d-flex justify-content-center align-items-center bs-icon me-2"
+                ><img
+                  src="assets/img/palette-de-couleurs.png"
+                  width="36"
+                  height="36" /></span
+              ><span class="fs-6 text-center"
+                ><br /><strong
+                  ><span style="background-color: rgb(45, 44, 56)"
+                    >Géoportail Artistique et Culturel de Rabat</span
+                  ></strong
+                ><br /><br
+              /></span>
+            </div>
+          </div>
+        </div>
+        <hr />
+        <div
+          class="text-muted d-flex justify-content-between align-items-center pt-3"
+        >
+          <p class="mb-0">
+            Copyright © 2022 Géoportail Artistique et Culturel de Rabat
+          </p>
+          <ul class="list-inline mb-0">
+            <li class="list-inline-item"></li>
+            <li class="list-inline-item"></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/bold-and-dark.js"></script>
+  </body>
+</html>

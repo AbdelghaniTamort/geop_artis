@@ -22,7 +22,7 @@ map.addControl(new mapboxgl.FullscreenControl());
 map.on('load', () => {
   map.addSource('stands', {
     'type': 'geojson',
-    'data': "assets/geojson/poly.geojson" ,
+    'data': "geop_artis/assets/geojson/poly.geojson" ,
   })
 
 

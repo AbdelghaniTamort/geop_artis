@@ -69,11 +69,11 @@ var fresque2 = L.geoJSON(fresque_2021,{pointToLayer: function(feature,latlng){
 
 
 // Ajout du contrôleur des calques 
-var baseMaps = {
-  "Google Maps" : google_maps,
-  "Satellite" : satellite,
-  "OpenStreetMap": osm
-}
+// var baseMaps = {
+//   "Google Maps" : google_maps,
+//   "Satellite" : satellite,
+//   "OpenStreetMap": osm
+// }
 
 var overlays = { 
   "7ème édition" : fresque1 , 

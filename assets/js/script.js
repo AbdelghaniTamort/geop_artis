@@ -5,23 +5,30 @@ var map = L.map("map",{
     ], 13);
 
 
-
-
-// Ajout de la basemap openstreetmap
-var osm = L.tileLayer(
-  "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+// Ajout des basemaps
+new L.basemapsSwitcher([
   {
-    maxZoom: 19,
-    attribution:
-      '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
-  }
-).addTo(map);
+    layer: L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+    {
+      maxZoom: 19,
+      attribution:
+        '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+    }).addTo(map), //DEFAULT MAP
+    icon: './assets/img/img1.png',
+    name: '<center>Open Street Maps</center>'
+  },
+  {
+    layer: L.tileLayer("https://mt1.google.com/vt/lyrs=y&x={x}&y={y}&z={z}"),
+    icon: './assets/img/img2.png',
+    name: 'Satellite'
+  },
+  {
+    layer: L.tileLayer("https://mt1.google.com/vt/lyrs=r&x={x}&y={y}&z={z}"),
+    icon: './assets/img/img3.png',
+    name: '<center> Google Maps </center>'
+  },
+], { position: 'topright' }).addTo(map);
 
-// Ajout de la basemap google maps
-var google_maps= L.tileLayer( "https://mt1.google.com/vt/lyrs=r&x={x}&y={y}&z={z}").addTo(map);
-
-// Ajout de la basemap google maps satellite hybrid
-var satellite= L.tileLayer("https://mt1.google.com/vt/lyrs=y&x={x}&y={y}&z={z}").addTo(map);
 
 
 // definition du premier marker

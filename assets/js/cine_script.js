@@ -6,24 +6,31 @@ var map = L.map("map",{
     }}).setView([34.01364461647608, -6.841457313499234
     ], 15);
 
-//Basemap satellite
-var stadia = L.tileLayer(
-  'https://tiles.stadiamaps.com/tiles/alidade_smooth/{z}/{x}/{y}{r}.png', {
-    attribution: '&copy; <a href="https://stadiamaps.com/">Stadia Maps</a>, &copy; <a href="https://openmaptiles.org/">OpenMapTiles</a> &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors'
-}).addTo(map);
 
-//Basemap openstreetmap
-var osm = L.tileLayer(
-  "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+// Ajout des basemaps
+new L.basemapsSwitcher([
   {
-    maxZoom: 19,
-    attribution:
-      '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
-  }
-).addTo(map);
+    layer: L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+    {
+      maxZoom: 19,
+      attribution:
+        '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+    }).addTo(map), //DEFAULT MAP
+    icon: './assets/img/img1.png',
+    name: '<center>Open Street Maps</center>'
+  },
+  {
+    layer: L.tileLayer("https://mt1.google.com/vt/lyrs=y&x={x}&y={y}&z={z}"),
+    icon: './assets/img/img2.png',
+    name: 'Satellite'
+  },
+  {
+    layer: L.tileLayer("https://mt1.google.com/vt/lyrs=r&x={x}&y={y}&z={z}"),
+    icon: './assets/img/img3.png',
+    name: '<center> Google Maps </center>'
+  },
+], { position: 'topright' }).addTo(map);
 
-// Ajout de la basemap google maps
-var google_maps= L.tileLayer( "https://mt1.google.com/vt/lyrs=r&x={x}&y={y}&z={z}").addTo(map);
 
 
 
@@ -90,9 +97,6 @@ var cine = L.geoJSON(cinemas,{pointToLayer: function(feature,latlng){
 
 	
 
-var baseMaps = {
-	"Google Maps": google_maps,
-	"OpenStreetMap": osm, 
-}
 
-var layerControl = L.control.layers(baseMaps).addTo(map)
+
+

@@ -75,7 +75,10 @@ var overlays = {
 
 var layerControl = L.control.layers(baseMaps, overlays).addTo(map);
 
-
+// ajout d'un bouton qui permet d'afficher un maker sur la position de l'utilisateur
+L.geolet({ position: 'bottomleft',
+           title : 'Trouver votre position actuelle'  
+         }).addTo(map);
 
 // routing machine 
 // L.Routing.control({

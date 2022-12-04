@@ -18,7 +18,7 @@ var osm = L.tileLayer(
 
 //FONCTION QUI CHANGE LE RAYON
 function setSizeIcon(attr){
-  return rayon=Math.sqrt(attr)*(20/Math.sqrt(180967));
+  return rayon=Math.sqrt(attr)*0.2762934678698326/Math.PI;
 };
 
 

@@ -1,27 +1,25 @@
 <!DOCTYPE qgis PUBLIC 'http://mrcc.com/qgis.dtd' 'SYSTEM'>
 <qgis version="3.18.2-Zürich">
-  <identifier>cinemas.geojson|layername=cinemas</identifier>
+  <identifier>nb_entrees_1.shp|layername=nb_entrees_1</identifier>
   <parentidentifier></parentidentifier>
   <language>FRA</language>
   <type>dataset</type>
-  <title>Les cinémas de Rabat</title>
-  <abstract>Ce fichier contient une liste des cinémas de Rabat avec leurs Localisation, les Reviews, les Tarifs moyens et les nombres d'écrans</abstract>
+  <title>Nombres d'entrées des cinéma de Rabat en 2019</title>
+  <abstract>Ce fichier contient plusieurs données y compris les nombres d'entrées de chaque cinéma de Rabat en 2019</abstract>
   <keywords vocabulary="gmd:topicCategory">
     <keyword>Emplacement</keyword>
     <keyword>Société</keyword>
   </keywords>
   <contact>
     <name>Harib</name>
-    <organization>IAV</organization>
+    <organization>IAV </organization>
     <position>Étudiante</position>
-    <voice></voice>
+    <voice>0762687065</voice>
     <fax></fax>
     <email>meryemharib@gmail.com</email>
     <role></role>
   </contact>
-  <links>
-    <link size="" url="https://abdelghanitamort.github.io/geop_artis/index.html" description="" format="" type="" name="indéfini 1" mimeType=""/>
-  </links>
+  <links/>
   <fees></fees>
   <encoding></encoding>
   <crs>
@@ -38,7 +36,7 @@
     </spatialrefsys>
   </crs>
   <extent>
-    <spatial maxx="-6.83541820399999978" maxy="34.02120433000000332" minz="0" miny="34.00418802000000085" maxz="0" crs="EPSG:4326" dimensions="2" minx="-6.84698911400000032"/>
+    <spatial maxx="-1.91699288999999995" maxy="35.78398992999999706" minz="0" miny="31.59096999000000139" maxz="0" crs="EPSG:4326" dimensions="2" minx="-8.0152869399999993"/>
     <temporal>
       <period>
         <start></start>

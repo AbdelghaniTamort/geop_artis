@@ -26,11 +26,11 @@ function setSizeIcon(attr){
 var Centro = L.geoJSON(nb_entrees_1, {
   pointToLayer: function (feature, latlng) {
     return L.circleMarker(latlng,{
-      radius : setSizeIcon(feature.properties.Nombre*10000), 
+      radius : setSizeIcon(feature.properties.Nombre), 
       color : '#ad0808',
       fillOpacity: 1,
       fillColor: 'red'
-    }).bindPopup("Nombre d'entrées : " + "<b>"+Math.trunc(feature.properties.Nombre*10000)+"</b>");
+    }).bindPopup("Nombre d'entrées : " + feature.properties.Nombre);
   }
 }).addTo(map) ;
 

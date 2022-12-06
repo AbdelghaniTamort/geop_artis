@@ -18,7 +18,7 @@ new L.basemapsSwitcher([
     name: '<center>Open Street Maps</center>'
   },
   {
-    layer: L.tileLayer("https://mt1.google.com/vt/lyrs=y&x={x}&y={y}&z={z}"),
+    layer: L.tileLayer("https://api.mapbox.com/styles/v1/a-tamort/clao5t81w001v14rctk7m6843/tiles/256/{z}/{x}/{y}@2x?access_token=pk.eyJ1IjoiYS10YW1vcnQiLCJhIjoiY2xhbWV6Y2NnMGJkMjNxbjY1eDRzMGxlNCJ9.xiRkasxOToHLdGljfIxYIA"),
     icon: './assets/img/img2.png',
     name: 'Satellite'
   },

@@ -9,7 +9,7 @@ const map = new mapboxgl.Map({
     zoom: 17.8, // starting zoom
     pitch: 20,
     bearing: -5,
-    style: 'mapbox://styles/a-tamort/clao5khuw002z14ldc46snhck', // style URL or style object
+    style: 'mapbox://styles/a-tamort/clao5t81w001v14rctk7m6843', // style URL or style object
     }
 );
 

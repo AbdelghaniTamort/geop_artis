@@ -22,8 +22,8 @@ var Centro = L.geoJSON(nb_entrees_1, {
       color : '#ad0808',
       fillOpacity: 1,
       fillColor: 'red'
-    }).bindPopup("Cinéma: " + feature.properties.Salle +
-      "Nombre d'entrées : " + feature.properties.Nombre);
+    }).bindPopup("Cinéma: " + "<b>" feature.properties.Salle + "</b>" + "<br>" +
+      "Nombre d'entrées : " + "<b>"+ feature.properties.Nombre + "</b>");
   }
 }).addTo(map) ;
 

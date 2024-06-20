@@ -48,6 +48,20 @@ map.on('load', () => {
     }
     });
 
+    
+    // Add extrusion layer
+    map.addLayer({
+        'id': 'extrusion',
+        'type': 'fill-extrusion',
+        'source': 'stands',
+        'layout': {},
+        'paint': {
+            'fill-extrusion-color': ['get', 'color'],
+            'fill-extrusion-height': ['get', 'height'],
+            'fill-extrusion-base': 0,
+            'fill-extrusion-opacity': 0.6,
+        },
+    });
 
 // Create a popup, but don't add it to the map yet.
 const popup = new mapboxgl.Popup({
